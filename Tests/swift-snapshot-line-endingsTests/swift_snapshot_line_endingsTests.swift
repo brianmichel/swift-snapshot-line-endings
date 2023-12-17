@@ -3,6 +3,9 @@ import Foundation
 import SnapshotTesting
 import XCTest
 
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 final class swift_snapshot_line_endingsTests: XCTestCase {
     func testBasicNetworkRequestSnapshot() {
